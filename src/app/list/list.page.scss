@@ -1,4 +1,4 @@
-page-viewpost {
+
 	.viewpost {
 		ion-grid {
 			height: 100%;
@@ -10,7 +10,9 @@ page-viewpost {
 		.button_col {
 			height: 40%;
 		}
+
 		ion-col {
+			margin: 1%;
 			height: 100%;
 		}
 		.center {
@@ -29,4 +31,15 @@ page-viewpost {
 			background-color: grey;
 		}
 	}
-}
+
+	.preço{
+		p{
+			text-align: center;
+			color: gray;
+			font-style: italic;
+			font-weight: 50;
+		}
+	}
+
+
+
