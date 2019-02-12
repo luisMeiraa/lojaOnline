@@ -1,0 +1,43 @@
+
+  .image-container {
+  min-height: 200px;
+  background-size: cover;
+  align-items: center;
+  padding: 10%;
+        
+  }
+
+
+  .imgHome {
+    max-width: 100%;
+    border: 0;
+    margin-top: 70px;
+    align-items: center;
+    padding: 10%;
+  }
+
+  .titlo{
+    h1{
+      text-align: center;
+    }
+  }
+  .botaoMain{
+    a {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: black;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      margin-left: 100px;
+      
+    }
+    
+  }  
+
