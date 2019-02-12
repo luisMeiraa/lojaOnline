@@ -8,8 +8,10 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="viewpost" class="preço">
 
+
+<ion-content class="viewpost" class="preço" on-scroll="getScrollPosisiton()">
+  
   <ion-row >
     <ion-col col-6 no-padding style="margin: 2%" >
       <a href="../tab1/">
@@ -117,6 +119,12 @@
         
       </ion-col>
     </ion-row>
-
+    <div class="float-button" >
+      <span class="height-fix">
+        <a class="content">
+            <ion-icon name="arrow-round-up"></ion-icon>   
+         </a>
+      </span>
+    </div>
 
 </ion-content>
