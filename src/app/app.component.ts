@@ -16,10 +16,21 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'Lista de Artigos',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Carrinho',
+      url: '/home',
+      icon: 'cart'
     }
+    ,
+    {
+      title: 'Conta',
+      url: '/home',
+      icon: 'person'
+    } 
   ];
 
   constructor(

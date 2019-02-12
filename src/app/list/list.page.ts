@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['list.page.scss']
 })
 export class ListPage implements OnInit {
+  public isSearchbarOpened = false;
   private selectedItem: any;
   private icons = [
     'flask',
@@ -28,6 +29,10 @@ export class ListPage implements OnInit {
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
+  }
+
+  onSearch(event){
+    console.log(event.target.value);
   }
 
   ngOnInit() {
