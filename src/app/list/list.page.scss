@@ -1,1 +1,32 @@
+page-viewpost {
+	.viewpost {
+		ion-grid {
+			height: 100%;
+			border: 10%;
+		}
+		.picture_preview {
+			height: 60%;
+		}
+		.button_col {
+			height: 40%;
+		}
+		ion-col {
+			height: 100%;
+		}
+		.center {
+    		margin-left: auto;
+    		margin-right: auto;
+				display: block;
+				border: 10%;
+        }
+        
 
+		ion-img {
+			object-fit: resize;
+			width: auto !important;
+			
+			
+			background-color: grey;
+		}
+	}
+}
