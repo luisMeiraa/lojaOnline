@@ -24,13 +24,19 @@ export class AppComponent {
       title: 'Carrinho',
       url: '/home',
       icon: 'cart'
-    }
+    },
+    {
+      title: 'Favoritos',
+      url: '/home',
+      icon: 'star'
+    } 
     ,
     {
       title: 'Conta',
       url: '/home',
       icon: 'person'
     } 
+    
   ];
 
   constructor(
