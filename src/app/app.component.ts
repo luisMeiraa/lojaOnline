@@ -33,7 +33,7 @@ export class AppComponent {
     ,
     {
       title: 'Conta',
-      url: '/home',
+      url: '/conta',
       icon: 'person'
     } 
     
