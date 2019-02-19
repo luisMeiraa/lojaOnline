@@ -1,5 +1,5 @@
 <ion-header>
-    
+
   <ion-toolbar>
 
     <ion-buttons slot="start">
@@ -7,15 +7,15 @@
     </ion-buttons>
 
     <ion-title *ngIf="!isSearchbarOpened">
-      Artigos Da Loja
+      Artigos Da Loja.
     </ion-title>
 
-    <ion-searchbar *ngIf="isSearchbarOpened" showCancelButton="true" (search)="onSearch($event)"  (ionCancel)="isSearchbarOpened=false">
+    <ion-searchbar *ngIf="isSearchbarOpened" showCancelButton="true" (search)="onSearch($event)" (ionCancel)="isSearchbarOpened=false">
     </ion-searchbar>
 
-    <ion-buttons slot="end" class="customBtn" >
+    <ion-buttons slot="end" class="customBtn">
       <button ion-button icon-only *ngIf="!isSearchbarOpened" (click)="isSearchbarOpened=true">
-          <ion-icon name="search"></ion-icon>
+        <ion-icon name="search"></ion-icon>
       </button>
     </ion-buttons>
 
@@ -24,130 +24,32 @@
 
 <ion-content class="viewpost" class="preço">
 
-  
+
   <!--<ion-searchbar showCancelButton cancelButtonText="Custom Cancel"></ion-searchbar>-->
-  <ion-row>
-    <ion-col col-6 no-padding style="margin: 2%">
-      <a href="../ficha-artigo/">
-        <img src="/assets/img/bolo.jpg">
-      </a>
+  <div col-md-6>
+    <ion-row>
 
-      <p>Bolo de chocolate</p>
-      <p>Preço:10€</p>
+      <ion-item (click)="goToFichaArtigo(artigo)" *ngFor="let artigo of artigos">
+        <ion-col no-padding style="margin: 2%">
 
-    </ion-col>
+          <img src="/assets/img/{{artigo.photo}}">
 
-    <ion-col col-6 no-padding style="margin: 2%">
-
-      <a href=""><img src="/assets/img/mesa.jpg"></a>
-      <p>Mesa de madeira</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-  </ion-row>
+          <p> {{artigo.nome}} </p>
+          <p>{{artigo.preco}}</p>
 
 
+        </ion-col>
 
-  <ion-row>
-    <ion-col col-6 no-padding style="margin: 2%">
-      <a href="../tab1/">
-        <img src="/assets/img/bolo.jpg">
-      </a>
+      </ion-item>
 
-      <p>Bolo de chocolate</p>
-      <p>Preço:10€</p>
+    </ion-row>
+  </div>
 
-    </ion-col>
-
-    <ion-col col-6 no-padding style="margin: 2%">
-      <a href=""><img src="/assets/img/mesa.jpg"></a>
-      <p>Mesa de madeira</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-  </ion-row>
-
-
-
-  <ion-row>
-    <ion-col col-6 no-padding style="margin: 2%">
-      <a href="../tab1/">
-        <img src="/assets/img/bolo.jpg">
-      </a>
-
-      <p>Bolo de chocolate</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-
-    <ion-col col-6 no-padding style="margin: 2%">
-
-      <a href=""><img src="/assets/img/mesa.jpg"></a>
-      <p>Mesa de madeira</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-  </ion-row>
-
-
-
-  <ion-row>
-    <ion-col col-6 no-padding style="margin: 2%">
-      <a href="../tab1/">
-        <img src="/assets/img/bolo.jpg">
-      </a>
-
-      <p>Bolo de chocolate</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-
-    <ion-col col-6 no-padding style="margin: 2%">
-
-      <a href=""><img src="/assets/img/mesa.jpg"></a>
-      <p>Mesa de madeira</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-  </ion-row>
-
-
-
-  <ion-row>
-    <ion-col col-6 no-padding style="margin: 2%">
-      <a href="../tab1/">
-        <img src="/assets/img/bolo.jpg">
-      </a>
-
-      <p>Bolo de chocolate</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-
-    <ion-col col-6 no-padding style="margin: 2%">
-
-      <a href=""><img src="/assets/img/mesa.jpg"></a>
-      <p>Mesa de madeira</p>
-      <p>Preço:10€</p>
-
-    </ion-col>
-  </ion-row>
-
-
-<!--<div class="float-button">
-  <span class="height-fix">
-    <a  class="content">
-        <ion-icon name="arrow-round-up"></ion-icon>
-    </a>
-  </span>
-</div>-->
-
-<ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="backToStart()"  
- >
-    <ion-fab-button  >
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="backToStart()">
+    <ion-fab-button>
       <ion-icon name="arrow-dropup"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
- <!-- <button (click)="backToStart()" ion-button text-only>Go to start</button>-->
+  <!-- <button (click)="backToStart()" ion-button text-only>Go to start</button>-->
 </ion-content>

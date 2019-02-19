@@ -1,43 +1,33 @@
 <ion-header>
   <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-    <ion-title>FichaArtigo</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ficha Artigo</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
-<div class="titulo">
-<h1>Nome do Artigo</h1>
-</div>
-
-  <div class="imgArtigo ">
-    <img src="/assets/img/bolo.jpg" id="imgPlacement"
-      style="align-items: center">
+<ion-content>
+  <div *ngIf="artigo">
+    <p> {{artigo.nome}} </p>
+    <p> {{artigo.preco}} </p>
+    <img [src]="'/assets/img/' + artigo.photo">
   </div>
-<div class="descArtigo">
-<p>id=decrição</p>
-<p>id=preco</p>
-
-</div>
-
-  
-
 </ion-content>
+
 <ion-footer>
-  <ion-toolbar >
+  <ion-toolbar>
     <div class="footer">
 
-    <ion-button href="../carrinho" color="dark" >
-      Adicionar
-      <ion-icon slot="start" name="cart"></ion-icon>
-    </ion-button>
-    
-    <ion-button href="../favoritos" color="dark">
-      <ion-icon slot="start" name="star"></ion-icon>
-      favoritos
-    </ion-button>
-  </div>
+      <ion-button href="../carrinho" color="dark">
+        Adicionar
+        <ion-icon slot="start" name="cart"></ion-icon>
+      </ion-button>
+
+      <ion-button href="../favoritos" color="dark">
+        <ion-icon slot="start" name="star"></ion-icon>
+        favoritos
+      </ion-button>
+    </div>
   </ion-toolbar>
 </ion-footer>
