@@ -11,7 +11,7 @@ body {
   background-color: #e3e3e3;
 }
 h4 {
-  color: #7ed321;
+  color: #F58B08;
 }
 input,
 input[type="radio"] + label,
@@ -32,13 +32,13 @@ select {
 }
 input:focus {
   outline: 0;
-  border-color: #64ac15;
+  border-color: #F58B08;
 }
 input:focus + .input-icon i {
-  color: #7ed321;
+  color: #F58B08;
 }
 input:focus + .input-icon:after {
-  border-right-color: #7ed321;
+  border-right-color: #F58B08;
 }
 input[type="radio"] {
   display: none;
