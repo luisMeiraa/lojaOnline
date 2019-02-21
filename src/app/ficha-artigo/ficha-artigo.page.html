@@ -8,10 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <div *ngIf="artigo">
+  <div *ngIf="artigo" class="descArtigo">
+    <img [src]="'/assets/img/' + artigo.photo">
     <p> {{artigo.nome}} </p>
     <p> {{artigo.preco}} </p>
-    <img [src]="'/assets/img/' + artigo.photo">
+
   </div>
 </ion-content>
 

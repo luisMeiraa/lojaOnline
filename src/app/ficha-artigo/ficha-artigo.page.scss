@@ -4,27 +4,35 @@
     margin-top: 10px;
     align-items: center;
     padding: 5%;
-  }
+}
 
-  .titulo{
-    h1{
-        color:gray;
+.titulo {
+    h1 {
+        color: gray;
         text-align: center;
     }
-  }
+}
 
 
 
-  .footer{
-   
-        text-align: center !important;
-        
-     }
-    
-.descArtigo{
-    p{
+.footer {
+
+    text-align: center !important;
+    max-width: 100%;
+    height: auto;
+}
+
+.descArtigo {
+    p {
         text-align: center;
-        color:gray;
-        font-size: 20px; 
+        color: gray;
+        font-size: 20px;
+    }
+
+    img {
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
     }
 }
